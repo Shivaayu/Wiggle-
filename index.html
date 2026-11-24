@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ead9c7">
+  <meta name="description" content="A little handmade book of thank-you, made by Shivaayu.">
+  <title>Thankuuu. — A Little Book of Appreciation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="floatie f1">♡</span><span class="floatie f2">✦</span><span class="floatie f3">♡</span>
+    <span class="floatie f4">✧</span><span class="floatie f5">♡</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Thankuuu home">Thankuuu<span>.</span></a>
+    <div class="top-right">
+      <span class="chapter" id="chapterLabel">A LITTLE SURPRISE</span>
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound" title="Sound on/off">♫ <span id="soundState">Sound off</span></button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="book-shell" id="bookShell">
+      <div class="book-shadow"></div>
+      <section class="page" id="page" aria-live="polite">
+        <div class="page-grain"></div>
+        <div class="page-content" id="pageContent"></div>
+        <div class="page-number" id="pageNumber"></div>
+        <div class="page-corner" id="pageCorner" aria-hidden="true"></div>
+      </section>
+      <div class="page-turn-overlay" id="turnOverlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="book-controls" id="bookControls">
+      <button class="nav-btn" id="prevBtn" aria-label="Previous page">← <span>Back</span></button>
+      <div class="page-dots" id="pageDots" aria-label="Page progress"></div>
+      <button class="nav-btn next" id="nextBtn" aria-label="Next page"><span>Next</span> →</button>
+    </div>
+    <p class="gesture-hint" id="gestureHint">Turn the page with a swipe, or tap the little arrow ✨</p>
+  </main>
+
+  <footer class="footer"><span>made with a little extra sweetness</span><span>♡ &nbsp; SHIVAAAYU</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="party-layer" id="partyLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
